@@ -1,0 +1,545 @@
+<!--
+    Restaurant project for the Mississippi Coding Academies 2021
+    Lorraine Partridge
+
+    top header
+  dark red bg
+  5 social icons
+     google
+     twitter
+     facebook
+     pinterest
+     linked in
+  MB-center
+  DT-right
+
+header
+ lighter red bg with linear gradient top light to bottom dark
+ h1 Restaurant
+ top-nav 
+   dropdown on MB
+   About
+   Events
+   Menu
+   Gallery
+   Contacts
+   Blog
+
+bottom-header
+   medium yellowish bg
+  p motto
+  search bar
+  MB-center
+  DT justify-between 
+
+banner
+  carousel
+  MB-salad image, no text
+  DT-salad image, text over image, inset on bottom left with subheader and text
+
+card section
+  light yellowish bg
+  6 cards
+     image
+     subheader
+     text
+   MB-display all inline
+   DT 3 cards per row
+
+special offers section
+  lighter yellowish bg
+  subheader
+  3 cards
+     icon
+     offer subheader
+     name of offer subheader
+     5 lines of text
+     click here button
+MB display 2 cards  on one line
+DT display 3 cards
+
+footer
+top footer
+  light charcoal bg
+  5 client logos
+  MB  display 2 on one line
+  DT display 5
+
+main footer
+medium charcoal bg
+  4 columns
+     About Us 
+       subheader
+       2 paragraphs
+       read more button
+     Our blog
+        2 cards with text
+     Our flickr
+        no content
+     Get in touch
+        address
+        phone
+        email link
+  MB display in 1 col
+  DT display inline
+
+bottom footer
+dark charcoal bg
+colophon
+  Restaurant name
+  copyright
+MB one column
+DT bottom left
+
+
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/1bb5182716/UntitledProject/style.css">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/2435e16ea5/UntitledProject/style-svg.css">
+<script defer src="https://i.icomoon.io/public/temp/2435e16ea5/UntitledProject/svgxuse.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Engagement&family=Fira+Sans:wght@100&family=La+Belle+Aurore&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+    <title>Restaurant</title>
+</head>
+<body>
+    <!--header
+ lighter red bg with linear gradient top light to bottom dark
+ h1 Restaurant
+ top-nav 
+   dropdown on MB
+   About
+   Events
+   Menu
+   Gallery
+   Contacts
+   Blog
+
+bottom-header
+   medium yellowish bg
+  p motto
+  search bar
+  MB-center
+  DT justify-between -->
+    <header class="header" id="header" >
+        <section class="top-header-section" id="top-header"> 
+            <div class="container"> 
+                <div class="row top-header-row justify-content-center justify-content-md-end">
+                    <nav class="nav navbar top-header-nav justify-content-between justify-content-lg-around">
+                        <a href="#link" class="nav-link top-nav-link" id="google"><span aria-hidden="true" data-icon="&#xea8b;" class="social-icon icon-google-plus"></span></a>
+                        <a href="#link" class="nav-link top-nav-link" id="twitter"><span aria-hidden="true" data-icon="&#xea96;" class="social-icon icon-twitter"></span></a>
+                        <a href="#link" class="nav-link top-nav-link" id="facebook"><span aria-hidden="true" data-icon="&#xea90;" class="social-icon icon-facebook"></span></a>
+                        <a href="#link" class="nav-link top-nav-link" id="pinterest"><span aria-hidden="true" data-icon="&#xead1;" class="social-icon icon-pinterest"></span></a>
+                        <a href="#link" class="nav-link top-nav-link" id="linkedin"><span aria-hidden="true" data-icon="&#xeaca;" class="social-icon icon-linkedin2"></span></a>
+                    </nav>
+                </div><!--end of top-header-row-->
+            </div><!--end of top-header-container-->
+        </section><!--end of top header section-->
+        <section class="main-header-section">
+            <div class="container main-header-container">
+                <div class="row main-header justify-content-between">
+                    <h1 class="header logo" id="header">restaurant</h1>
+                    <nav class="d-none d-md-flex nav navbar main-header-nav align-items-center justify-content-center">
+                        <a href="#about" class="nav-link main-nav-link" id="">About</a>
+                        <a href="#events" class="nav-link main-nav-link" id="">Events</a>
+                        <a href="#menu" class="nav-link main-nav-link" id="">Menu</a>
+                        <a href="#gallery" class="nav-link main-nav-link" id="">Gallery</a>
+                        <a href="#contacts" class="nav-link main-nav-link" id="">Contacts</a>
+                        <a href="#blog" class="nav-link main-nav-link" id="">Blog</a>
+                    </nav>
+                    <div class="dropdown-div d-md-none">
+                        <select name="top-nav" id="top-nav">
+                            <option value="">Choose option</option>
+                            <option value="about">about</option>
+                            <option value="events">events</option>
+                            <option value="menu">menu</option>
+                            <option value="gallery">gallery</option>
+                            <option value="contacts">contacts</option>
+                            <option value="blog">blog</option>
+                        </select>
+                    </div><!--end of dropdown div-->
+                </div><!--end of main header row-->
+            </div><!--end of main header container-->
+        </section><!--end of main header section-->
+        <section class="bottom-header-section">
+            <div class="container bottom-header-container">
+                <div class="row bottom-header-row justify-content-center justify-content-md-between slogan">
+                    <h2 class="col col-md-6 justify-content-start text bottom-header-text">top quality ingredients only in our kitchen!</h2>
+                    <div class="col col-md-6 d-flex align-items-center  justify-content-center justify-content-md-end  search-bar">
+                        <form action="#link">
+                            <input type="search" value=""/><span aria-hidden="true" data-icon="&#xe986;" class="search icon-search"></span>
+                        </form>
+                    </div>
+                </div><!--end bottom header-row -->                
+            </div><!--end bottom header container-->
+        </section><!--end bottom-header-section-->
+    </header><!--end header-->
+    <!--carousel section
+        banner
+        carousel
+        MB-salad image, no text
+        DT-salad image, text over image, inset on bottom left with subheader and text-->
+        
+    <main>     
+        <section class="carousel-section">
+            <div class="container carousel-container">
+                <div class="row carousel-row d-inline"> 
+                    <div id="carousel" class="col-xs-6 carousel slide carousel-fade" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">                     
+                            <div class="carousel-item carousel-item-1 active" data-interval="5000">
+                                <!-- 
+                                <h2>salad of the day</h2>
+                                <p class="promo-text"></p>
+                                <div class="promo-div">
+                                    <h2>What is inside?</h2>
+                                    <p class="promo-text">this is the best</p>
+                                </div>
+                                -->
+                                <img src="css/media/salad_2.jpg" class="d-block w-100 carousel-image img-fluid" alt="salad">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 subheader carousel-header>salad</h5>
+                                    <p class="text carousel-text">of the day</p>
+                                </div>
+                                <div class="carousel-inset d-none d-md-block">
+                                    <h6 class="subheader inside-header">What is inside?</h6>
+                                    <p class="text inside-text">fresh spring greens, tomatoes, cucumbers, cheddar cheese, grilled chicken and crispy wonton strips with our special house dressing...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-2" data-interval="5000">
+                                <img src="css/media/fresh_ideas.jpg" class="d-block w-100 carousel-image img-fluid" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="subheader carousel-header">wrap</h5>
+                                    <p class="text carousel-text">of the day</p>
+                                </div>
+                                <div class="carousel-inset d-none d-md-block">
+                                    <h6 class="subheader inside-header">What is inside?</h6>
+                                    <p class="text inside-text">spicy chicken shwarma, lettuce, cucumber and tomatoes with our own yogurt dressing...</p>
+                                </div>
+                            </div>
+                            
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="css/media/food.jpg" class="d-block w-100 carousel-images img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="subheader carousel-header">sandwich</h5>
+                                        <p class="text carousel-text">of the day</p>
+                                    </div>
+                                    <div class="carousel-inset d-none d-md-block">
+                                        <h6 class="subheader inside-header">What is inside?</h6>
+                                        <p class="text inside-text">two pure beef patties hand-leafed lettuce, tomato, spread with or without onions, stacked high on a freshly baked bun...</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <a class="carousel-control carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        
+                        <a class="carousel-control carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-icon carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div><!--end of carousel-->
+                </div><!--end of carousel row-->                
+            </div><!--end of carousel-container-->
+        </section>
+        <!--card section
+            card section
+            light yellowish bg
+            6 cards
+            image
+            subheader
+            text
+            MB-display all inline
+            DT 3 cards per row-->
+    <section class="figure-section">
+        <div class="container-fluid figure-container">
+            <div class="row figure-row figure-row-1 justify-content-center justify-content-md-around">
+                <figure class="figure col-md-4" id="figure-1">    
+                    <figcaption>
+                        <img src="css/media/location.jpg" alt="open 24 hours"class="figure-image img-fluid">
+                        <h2 class="figcaption-header">Location finder</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure col-md-4" id="figure-2">    
+                    <figcaption>
+                        <img src="css/media/food.jpg" alt="food" class="figure-image img-fluid">
+                        <h2 class="figcaption-header">food quality & menu</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure col-md-4" id="figure-3">    
+                    <figcaption>
+                        <img src="css/media/employment.jpg" alt="employment" class="figure-image img-fluid">
+                        <h2 class="figcaption-header">Lorem, ipsum.</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+            </div><!--end of figure row 1-->
+            <div class="row figure-row figure-row-2">   
+                <figure class="figure col-md-4">    
+                    <figcaption>
+                        <img src="css/media/our_story.jpg" alt="our story" class="figure-image img-fluid">
+                        <h2 class="figcaption-header">our story</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure col-md-4" id="figure-5">    
+                    <figcaption>
+                        <img src="css/media/promotions.jpg" alt="promotions" class="figure-image img-fluid">
+                        <h2 class="figcaption-header">Promotions</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="figure col-md-4" id="figure-6">    
+                    <figcaption>
+                        <img src="css/media/fresh_ideas.jpg" alt="fresh ideas" class="figure-image img-fluid">
+                        <h2 class="figcaption-header">Fresh ideas</h2>
+                        <p class="figcaption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                
+            </div><!--end figure row-2-->
+        </div>
+    </section><!--close figure section-->
+            
+                <!--special offers section
+                    lighter yellowish bg
+                    subheader
+                    3 cards  --I decided not to  use cards here
+                    icon
+                    offer subheader
+                    name of offer subheader
+                    5 lines of text
+                    click here button
+                    MB display 2 cards  on one line
+                    DT display 3 cards-->
+                    
+        <section class="offers-section">
+            <div class="container offers-container">
+                <h2 class="reservations">Reservations and orders may be placed anytime</h2> 
+                <div class="row offers-row justify-content-center justify-content-md-around">        
+                    <!--<div class="offers col-sm-6 col-md-4 d-flex justify-content-center justify-content-md-around">-->
+                        <div class="offer-div offer-div-1 col-6 col-md-4 d-flex flex-sm-column flex-md-row">
+                            <div class="offer-text-div">
+                                <div class="image">
+                                    <span aria-hidden="true" data-icon="&#xe900;" class="offer-icon icon-coffee"></span>
+                                </div>
+                                <h2 class="offer-header d-inline">
+                               <!--  <span><svg class="icon offer-icon icon-coffee"><use xlink:href="#icon-coffee"></use>offer 1</svg></span>-->
+                                <span class="small-text d-block ">offer one</span>Lorem, ipsum dolor.
+                                </h2>
+                                <p class="offer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores non dolores eaque debitis, mollitia omnis, eos vero aspernatur totam blanditiis cum, qui sapiente nostrum quam dolorem aliquam. Laudantium exercitationem nostrum ipsa inventore! Odio nostrum porro molestiae excepturi incidunt ab fugit recusandae facere quasi dicta est nisi dolorem, laudantium dolor.</p>
+                                <a href="#link" class="click_here">&#187;&nbspClick here</a>
+                            </div><!--end of offer 1 text-->
+                        </div><!--end of offer-div 1-->
+                        <div class="offer-div offer-div-2 col-6 col-md-4 d-flex flex-sm-column flex-md-row">                    
+                            <div class="offer-text-div">
+                                <h2 class="offer-header">
+                                    <span aria-hidden="true" data-icon="&#xe9a3;" class="offer-icon icon-spoon-knife"></span>
+                               <!--  <svg class="icon offer-icon icon-forkandknife"><use xlink:href="#icon-forkandknife"></use></svg>-->
+                                <span class="small-text d-block">offer two</span>Lorem, ipsum dolor.
+                                </h2>
+                                <p class="offer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores non dolores eaque debitis, mollitia omnis, eos vero aspernatur totam blanditiis cum, qui sapiente nostrum quam dolorem aliquam. Laudantium exercitationem nostrum ipsa inventore! Odio nostrum porro molestiae excepturi incidunt ab fugit recusandae facere quasi dicta est nisi dolorem, laudantium dolor.</p>
+                                <a href="#link" class="click_here">&#187;&nbspClick here</a>
+                            </div><!--end of offer 2 text-->
+                        </div><!--end of offer div 2-->
+                        <div class="offer-div offer-div-3 col-sm-6 col-md-4 d-none d-md-flex flex-sm-row flex-md-row justify-content-md-around"> 
+                            <div class="image-div ">
+                                <!--icon here-->
+                            </div>
+                            <div class="offer-text-div">
+                                <h2 class="offer-header">
+                                <span aria-hidden="true" data-icon="&#xe9da;" class="offer-icon icon-heart"></span>   
+                                <!--<svg class="icon offer-icon icon-heart"><use xlink:href="#icon-heart"></use></svg>-->
+                                <span class="small-text d-block">offer three</span>Lorem, ipsum dolor.
+                                </h2>
+                                <p class="offer-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia asperiores non dolores eaque debitis, mollitia omnis, eos vero aspernatur totam blanditiis cum, qui sapiente nostrum quam dolorem aliquam. Laudantium exercitationem nostrum ipsa inventore! Odio nostrum porro molestiae excepturi incidunt ab fugit recusandae facere quasi dicta est nisi dolorem, laudantium dolor.</p>
+                                <a href="#link"  class="click_here">&#187;&nbspClick here</a>
+                            </div>
+                        <!--</div>end of offer div 3-->
+                    </div><!--end of offers div-->
+                </div> <!--end of offers-row--> 
+            </div><!--end of offers container-->
+        </section><!--end of offers section-->
+
+
+
+
+                    <!-- 
+                    <section class="container offers-section">
+                        <p class="text reservations-text">Reservations and orders may be placed anytime</p>
+                        <div class="row offers-row justify-content-center justify-content-md-around">
+                            <div class="col col-md-3 offers offer1">
+                                <a href="#offer1" class="nav-link offers-nav-link"><span aria-hidden="true" data-icon="&#xe900;" class="icon-coffee"></span><p class="text offer-number d-none d-lg-inline">&nbspoffer one</p><h4 class="offers-header">Quis autem vel</h4></a>
+                                <p class="text offers-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dignissimos ea odit, maxime ducimus, necessitatibus facilis sit pariatur natus voluptatem sapiente labore. Autem velit possimus tenetur dolore maxime odit modi cum eaque nostrum minima, cumque, aut maiores laborum! Consectetur, tempore?</p>
+                                <a href="#offer1" class="nav-link offers-nav-link click"><span aria-hidden="true" data-icon="&#xea42;" class="icon-circle-right"></span>&nbspClick here</a>
+                            </div>
+                            <div class="col col-md-3 offers offer2">
+                                <a href="#offer1" class="nav-link offers-nav-link"><span aria-hidden="true" data-icon="&#xe9a3;" class="icon-spoon-knife"></span><p class="text offer-number d-none d-lg-inline">&nbspoffer one</p><h4 class="offers-header">Vestibulum iac</h4></a>
+                                <p class="text offers-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dignissimos ea odit, maxime ducimus, necessitatibus facilis sit pariatur natus voluptatem sapiente labore. Autem velit possimus tenetur dolore maxime odit modi cum eaque nostrum minima, cumque, aut maiores laborum! Consectetur, tempore?</p>
+                                <a href="#offer1" class="nav-link offers-nav-link click"><span aria-hidden="true" data-icon="&#xea42;" class="icon-circle-right"></span>&nbspClick here</a>
+                            </div>
+                            <div class="col col-md-3 offers offer3">
+                                <a href="#offer1" class="nav-link offers-nav-link"><span aria-hidden="true" data-icon="&#xed9a;" class="icon-heart"></span><p class="text offer-number d-none d-lg-inline">&nbspoffer one</p><h4 class="offers-header">Proin dictum</h4></a>
+                                <p class="text offers-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa dignissimos ea odit, maxime ducimus, necessitatibus facilis sit pariatur natus voluptatem sapiente labore. Autem velit possimus tenetur dolore maxime odit modi cum eaque nostrum minima, cumque, aut maiores laborum! Consectetur, tempore?</p>
+                                <a href="#offer1" class="nav-link offers-nav-link click"><span aria-hidden="true" data-icon="&#xea42;" class="icon-circle-right"></span>&nbspClick here</a>
+                            </div>
+                        </div>--><!--end of offers row-->
+                    <!--</section>end of offers section-->  
+    </main>
+                    
+                    <!--
+                        footer
+                        top footer
+                        light charcoal bg
+                        5 client logos
+                        MB  display 2 on one line
+                        DT display 5
+                        
+                        main footer
+                        medium charcoal bg
+                        4 columns
+                        About Us 
+                        subheader
+                        2 paragraphs
+                        read more button
+                        Our blog
+                        2 cards with text
+                        Our flickr
+                        no content
+                        Get in touch
+                        address
+                        phone
+                        email link
+                        MB display in 1 col
+                        DT display inline
+                        
+                        bottom footer
+                        dark charcoal bg
+                        colophon
+                        Restaurant name
+                        copyright
+                        MB one column
+                        DT bottom left-->
+        <footer class="footer" id="footer">
+            <section class="client-section"> 
+                <div class="container footer-container client-container"> 
+                    <div class="row top-footer justify-content-around">
+                        <ul class="client-list nav">
+                            <li class="client">
+                                <p class="text client-text" id="client1">client logo</p>
+                            </li>
+                            <li class="client">
+                                <p class="text client-text" id="client2">client logo</p>
+                            </li>
+                            <li class="client d-none d-md-inline">
+                                <p class="text client-text" id="client3">client logo</p>
+                            </li>
+                            <li class="client d-none d-md-inline">
+                                <p class="text client-text" id="client4">client logo</p>
+                            </li>
+                            <li class="client d-none d-lg-inline">
+                                <p class="text client-text" id="client5">client logo</p>
+                            </li>
+                        </ul>
+
+                        <!-- 
+                            <div class="client">
+                                <p class="text client-text" id="client1">client logo</p>
+                            </div>
+                            <div class="client">
+                                <p class="text client-text" id="client2">client logo</p>
+                            </div>
+                            <div class="client d-none d-md-inline">
+                                <p class="text client-text" id="client3">client logo</p>
+                            </div>
+                            <div class="client d-none d-md-inline">
+                                <p class="text client-text" id="client4">client logo</p>
+                            </div>
+                            <div class="client d-none d-md-inline">
+                                <p class="text client-text" id="client5">client logo</p>
+                            </div>
+                        -->
+                    </div><!--end of top footer row-->
+                </div><!--end of client container-->
+        </section><!--end of client section-->
+        <section class="main-footer-section"> 
+            <div class="container main-footer-container">
+                <div class="row main-footer-row justify-content-center justify-content-md-around d-block d-md-flex">
+                    <div class="col col-lg-3 footer-column footer-column1 ">
+                        <h3 class="subheader footer-subheader about-us">
+                            about us
+                        </h3>
+                        <p class="text footer-text about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat eum rem veritatis. Voluptatem, sequi quisquam.</p>
+                        <p class="text footer-text about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse ex atque totam nobis nulla impedit voluptate? Laudantium, ex velit? Suscipit deserunt maxime nemo autem!</p>
+                        <a href="#about_us" class="nav-link read-more">&#187;&nbsp<span class="read">Read more</span></a>
+                    </div>
+                    <div class="col col-lg-3 footer-column footer-column2">
+                        <h3 class="subheader footer-subheader our-blog">our blog</h3>
+                        <h4 class="subheader footer-subheader blog-header">Lorem ipsum dolor sit.</h4>
+                        <p class="text footer-text blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur beatae dolore, obcaecati ad dignissimos aspernatur facere voluptatibus distinctio odio.</p>
+                        <div class="hr"></div>
+                        <h4 class="subheader footer-subheader blog-header">Lorem ipsum dolor sit.</h4>
+                        <p class="text footer-text blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur beatae dolore, obcaecati.</p>
+                    </div>
+                    <div class="col col-lg-3 footer-column footer-column3">
+                        <h3 class="subheader footer-subheader flickr-header">our flickr</h3>
+                    </div>
+                    <div class="col col-lg-3 footer-column footer-column4">
+                        <h3 class="subheader footer-subheader contact-header">get in touch</h3>
+                        <p class="text footer-text contact-text">8901 Marmora Road</p>
+                        <p class="text footer-text contact-text">Glasgow, Do4 89GR.</p>
+                        <p class="text footer-text contact-text">Freephone: +1 800 559 6580</p>
+                        <p class="text footer-text contact-text">Telephone: +1 959 603 6035</p>
+                        <p class="text footer-text contact-text">FAX:       +1 504 889 9898</p>
+                        <p class="text mail-text">E-mail: mail@demolink.org</p>
+                    </div>
+                </div>
+            </div><!--end of main footer container-->    
+        </section><!--end of main-footer section-->        
+                <div class="row colophon">
+                    <p class="col col-md-6 text colophon-header">restaurant</p>
+                    <div class="w-100"></div>
+                    <p class="col col-md-6 text colophon-text">&copy 2021 privacy policy</p>
+                </div>
+            </div><!--end of footer container-->
+        </footer>
+        <symbol id="icon-forkandknife" viewBox="0 0 16 16">
+            <path d="M7 0c-0.552 0-1 0.447-1 1v5h-1v-5c0-0.553-0.448-1-1-1s-1 0.447-1 1v5h-1v-5c0-0.553-0.448-1-1-1s-1 0.447-1 1v6c0 0.553 0.448 1 1 1h2v7c0 0.553 0.448 1 1 1s1-0.447 1-1v-7h2c0.552 0 1-0.447 1-1v-6c0-0.553-0.448-1-1-1zM14 0c0 0-2 0.645-2 3v2c0 1.305 0.837 2.403 2 2.816v7.184c0 0.553 0.448 1 1 1s1-0.447 1-1v-15h-2z"></path>
+            </symbol>
+        <symbol id="icon-heart" viewBox="0 0 16 16">
+            <path d="M11.8 1c-1.682 0-3.129 1.368-3.799 2.797-0.671-1.429-2.118-2.797-3.8-2.797-2.318 0-4.2 1.882-4.2 4.2 0 4.716 4.758 5.953 8 10.616 3.065-4.634 8-6.050 8-10.616 0-2.319-1.882-4.2-4.2-4.2z"></path>
+            </symbol>
+        <symbol id="icon-coffee" viewBox="0 0 16 16">
+            <path d="M12 6.499v-1c0-0.277-0.223-0.5-0.5-0.5h-11c-0.277 0-0.5 0.223-0.5 0.5v7c0 0.090 0.030 0.169 0.071 0.242 0.348 1.854 1.974 3.258 3.929 3.258h4c1.261 0 2.378-0.588 3.111-1.5h0.889c2.209 0 4-1.791 4-4s-1.791-4-4-4zM12 12.499v-4.001c1.104 0 2 0.896 2 2.001s-0.896 2-2 2zM2.599 4.252c-0.075 0.135-0.066 0.247 0.076 0.247s0.334-0.112 0.383-0.245c0.497-1.295-2.111-2.347-0.535-3.943 0.162-0.166 0.227-0.308 0.084-0.309s-0.438 0.135-0.593 0.296c-1.518 1.56 1.292 2.655 0.586 3.956zM4.487 4.258c-0.019 0.129 0.061 0.24 0.201 0.24s0.275-0.112 0.289-0.239c0.111-0.927-0.63-1.777-0.186-2.579 0.007-0.145-0.163-0.289-0.385-0.308s-0.417 0.089-0.425 0.234c-0.054 1.046 0.635 1.714 0.505 2.654zM6.701 4.498c0.139 0 0.25-0.112 0.277-0.235 0.253-1.198 2.324-1.567 0.763-3.707-0.167-0.221-0.463-0.424-0.607-0.426s-0.157 0.195-0.061 0.414c1.553 1.466 0.062 2.518-0.598 3.719-0.022 0.123 0.088 0.235 0.227 0.235zM8.714 4.498c0.14 0 0.234-0.112 0.274-0.244 0.38-1.272 4.67-2.094 1.063-3.844-0.376-0.178-0.864-0.327-0.97-0.321-0.108 0.008 0.147 0.192 0.468 0.394 2.948 1.933 0.201 1.349-1.059 3.775-0.041 0.128 0.085 0.24 0.225 0.24z"></path>
+            </symbol>
+    </body>
+</html>
+
+<!--problems to resolve
+add border dividers to client section
+adjust colors
+finish styling-->

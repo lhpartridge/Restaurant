@@ -1,0 +1,558 @@
+/*Restaurant project for the Mississippi Coding Academies 2021
+Lorraine Partridge
+
+fonts and colors
+
+top header #df743a
+main header linear gradient #f26035 to #df473a
+bottom header and button color #fff8ce
+card section #f5eedc
+special offers section  #f5f9ea
+icon color #999e03
+top footer #66635e
+logo color #7d2035
+client text color #b5b2ad
+main footer #5c5954
+bottom footer #413e39
+footer subheader #f6f6f6
+
+
+*/
+
+/*linear gradient top f15f52
+bottom e54830
+yellowish secondary  fff8ce
+text 
+691e1b
+offer header 999e03
+client bg 66635e
+info bg (main footer) 5c5954
+colophon bg  423e39
+figure bg f5eedc
+offer bg f9f5ea
+client logo text aeaba6
+
+top nav linear-gradient (
+  to bottom,
+  #f15f52,
+  #e54839
+  #df473a
+  );
+
+fonts
+client logo courier prime
+  work sans
+  yesteryear
+
+
+y*/
+
+:root {
+    --bgColor: #f5eedc;
+    --topHeaderColor: #df743a;
+    --mainHeaderGradient: #f26035;
+    --bottomHeader: #fff8ce;
+    --cardBg: #f5eedc;
+    --specialsBg:  #f5f9ea;
+    --iconColor: #999e03;
+    --topFooterBg: #66635e;
+    --mainFooterBg: #5c5954;
+    --bottomFooterBg: #413e39;
+    --headerText: #fffdff;
+    --clientText: #b5b2ad;
+    --subheaderText: #90142c;
+    --headerFont: 'Arial';
+    --subheaderFont: 'Calibri';
+    --textFont: 'Gill Sans';
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7v8zod');
+    src:  url('../fonts/icomoon.eot?7v8zod#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?7v8zod') format('truetype'),
+      url('../fonts/icomoon.woff?7v8zod') format('woff'),
+      url('../fonts/icomoon.svg?7v8zod#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  
+  .icon-search:before {
+    content: "\e986";
+  }
+  .icon-spoon-knife:before {
+    content: "\e9a3";
+  }
+  .icon-heart:before {
+    content: "\e9da";
+  }
+  .icon-circle-right:before {
+    content: "\ea42";
+  }
+  .icon-circle-left:before {
+    content: "\ea44";
+  }
+  .icon-google-plus:before {
+    content: "\ea8b";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
+  .icon-pinterest:before {
+    content: "\ead1";
+  }
+  .icon-coffee:before {
+    content: "\e900";
+  }
+  
+/*generic rules*/
+
+body {
+  margin:0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+a:hover {
+  transition: 0.5s ease;
+}
+
+  /*top header*/
+
+/*.social-section {
+    background-color: var(--prim);
+}
+
+.soc-link {
+  color: var(--sec);
+transition: color 0.5s ease;
+}
+
+.soc-link:hover {
+  color: var(--clientText);
+}
+
+.top-nav-section {
+  background: var(--topNav);  (because of gradient)
+  padding: 40px 0;  
+}
+
+.logo {
+  color: #fff;
+  font-family: var(--logoText);
+  font-size: 36px;
+  font-weight: 700; did not work with the chosen google font>>see the class stream to get the replacement font style sheet; 9/13 @2:42pm
+  text-transform: capitalize;
+  text-align: center; CANCEL let bootstrap handle the text-align
+}
+
+added media query for logo font size 76px
+
+dropdown-div assign class in html
+
+.nav-drop {
+or 
+
+  .dropdown-div select {
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .slogan-section {
+    background-color: var(--sec);
+    padding: 40px 0;
+  }
+  .slogan-text {
+    color: var(--textColor);
+    font-family: var(--workSans) Changed name of logoText
+    font-size: calc(14px + (24-14) * ((100vw - 300px) / (1600 - 300)));
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  @media (max-width: 767px) {
+    .slogan-text {
+      font-size: 36px;  add class to p tag for slogan text-sm-center
+    }
+
+     {
+      margin: 20px auto;
+      paddding: 10px 0;
+      width: 80%;
+      background-color: var(--sec);
+      border-color: var(--textColor);  add border to search box
+
+
+
+
+
+
+
+
+
+
+
+  */
+
+
+
+  .top-header-section {
+    background-color: var(--topHeaderColor);
+  }
+
+  .social-icon {
+    color: var(--bottomHeader);
+  }
+
+  h1 {
+    color: var(--headerText);
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  .main-header-section {
+    background: linear-gradient(0deg, var(--mainHeaderGradient), var(--topHeaderColor), var(--mainHeaderGradient));
+  }
+
+  .main-nav-link {
+    background-color: var(--mainHeaderGradient);
+    text-transform: uppercase;
+    color: var(--headerText);
+    /* 
+    height: 40px;
+    width: auto;
+    margin: 3px;
+    border-radius: 5px;
+    */
+  }
+  
+  .main-nav-link:hover {
+    background-color: var(--headerText);
+    color: var(--subheaderText);
+  }
+/*
+  input {
+    background-image: url('css/media/search');
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+*/
+
+input {
+  font-size: calc(10px + (18 - 10)  * (100vw - 300px) / (800 - 300));
+  border: 2px solid var(--subheaderText);
+}
+
+.icon-search {
+  color: var(--subheaderText);
+  font-size: calc(10px + (18 - 10)  * (100vw - 300px) / (800 - 300));
+}
+
+  .bottom-header-text, .reservations {
+    color: var(--subheaderText);
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(10px + (24 - 10) * (100vw - 300px) / (800 - 300));
+    font-style: italic;
+  }
+
+  .carousel-section {
+    background-image: url(media/salad_2.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 5px #ddd;
+  }
+
+.carousel-item {
+  position: relative;
+  justify-content: center;
+}
+
+  .carousel-caption {
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+  }
+
+h5 {
+    font-size: calc(24px + (80 - 24) * (100vw - 300px) / (800 - 300));
+    color: var(--headerText);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.carousel-text {
+  font-size: calc(12px + (20 - 12) * (100vw - 300px) / (800 - 300)); 
+  text-transform: uppercase;
+}
+
+  .carousel-inset {
+    background-color: var(--bottomHeader);
+    opacity: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    height: auto;
+    max-height: 25%;
+  }
+
+  h6 {
+    font-size: calc(12px + (24 - 12) * (100vw - 300px) / (800 - 300)); 
+    color: var(--subheaderText);
+    font-style: italic;
+  }
+
+  .inside-text {
+    font-size: calc(10px + (14 - 10) * (100vw - 300px) / (800 - 300)); 
+    color: var(--subheaderText);
+    font-style: italic;
+  }
+
+  .carousel-control-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--bottomHeader);
+  }
+
+.figure-section {
+  background-color: var(--cardBg);
+}
+
+  .figure-row {
+    background-color: var(--cardBg);
+    padding: 20px 0;
+  }
+
+  .figure {
+    background-color: #f5eedc;
+    margin-top: 20px;  /*adjust margins around figures*/
+    padding: 0 40px;
+  }
+
+
+.figure-row {
+  background-color: var(--cardBg);
+  padding-bottom: 20px;
+}
+
+  .figure {
+    margin-top: 20px;
+  }
+  
+.figure-text, .offers-text{
+  font-size: calc(8px + (10 - 8) * (100vw - 300px) / (800 - 300)); 
+}
+
+figcaption {
+  background-color: #fff;
+}
+
+.figcaption-header {
+  text-transform: uppercase;
+  color: var(--subheaderText);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.offers-section {
+  padding-bottom: 20px;
+}
+
+
+  h3 {
+    text-transform: uppercase;
+    color: var(--subheaderText);
+    font-weight: 700;
+  }
+
+.reservations {
+  padding: 20px 0;
+}
+
+  .offers-nav-link, .offer-header, .offer-icon {
+    color: var(--iconColor);
+  }
+
+  .offer-icon {
+    font-size: 48px;
+  }
+
+  /*
+  .offer-header, .icon-coffee, .icon-spoon-knife, .icon-heart, {
+    font-size: calc(12px + (20 - 12) * (100vw - 300px) / (800 - 300));  
+    color: var(--iconColor);
+  }
+  */
+
+  .small-text {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+.click_here {
+  color: var(--mainHeaderGradient);
+}
+
+  h4 {
+    margin-left: 36px;
+  }
+
+  .offer-number{
+    font-size: calc(10px + (18 - 10) * (100vw - 300px) / (800 - 300)); 
+    text-transform: uppercase;
+  }
+
+  .offer-header {
+    text-transform: capitalize;
+  }
+
+  .offers-text {
+    margin-left: 56px;
+  }
+  .click {
+    font-size: calc(8px + (12 - 8) * (100vw - 300px) / (800 - 300)); 
+    color: var(--topHeaderColor);
+    margin-left: 40px;
+  }
+
+  .client-section {
+    background-color: var(--topFooterBg);
+  }
+
+.client-section {
+  padding: 0px 0;
+}
+
+  .client-text {
+    font-size: calc(10px + (18 - 10) * (100vw - 300px) / (800 - 300));
+    color: var(--clientText);
+    text-transform: capitalize;
+    padding: 30px 0;
+  }
+
+.client {
+  list-style-type: none;
+  border-right: 1px solid var(--clientText);
+  padding: 0 40px;
+}
+
+.client:nth-child(5) {
+  border-right: none;
+}
+
+  #client1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  #client2 {
+    font-family: 'La Belle Aurore', cursive;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  #client3 {
+    font-family: 'Rokkitt', serif;
+    font-weight: 700;
+  }
+
+  #client4 {
+    font-family: 'Engagement', cursive;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  #client5 {
+    font-family: 'Amita', cursive;
+    font-weight: 500;
+  }
+
+  .main-footer-section {
+    background-color: var(--mainFooterBg);
+  }
+
+  .footer-subheader {
+    color: var(--cardBg);
+  }
+
+  .footer-text {
+    color: var(--clientText);
+  }
+
+  .read-more {
+    font-size: calc(8px + (12 - 8) * (100vw - 300px) / (800 - 300)); 
+    color: var(--clientText);
+    padding: 10px 0;
+  }
+
+  .read {
+    text-decoration: underline;
+  }
+
+.blog-header {
+  margin-left: 0;
+  font-size: calc(10px + (14 - 10) * (100vw - 300px) / (800 - 300));  
+}
+
+.contact-text {
+  padding: 0;
+  margin: 0;
+}
+
+.mail-text {
+  padding-top: 8px;
+}
+
+.mail-text, .colophon-header, .colophon-text {
+  color: var(--headerText);
+}
+
+.colophon {
+  background-color: var(--bottomFooterBg);
+}
+
+.colophon-header {
+  font-size: calc(10px + (30 - 10) * (100vw - 300px) / (800 - 300));
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
