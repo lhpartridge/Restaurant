@@ -68,11 +68,11 @@ y*/
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?7v8zod');
-    src:  url('../fonts/icomoon.eot?7v8zod#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?7v8zod') format('truetype'),
-      url('../fonts/icomoon.woff?7v8zod') format('woff'),
-      url('../fonts/icomoon.svg?7v8zod#icomoon') format('svg');
+    src:  url('../Fonts/icomoon.eot?7v8zod');
+    src:  url('../Fonts/icomoon.eot?7v8zod#iefix') format('embedded-opentype'),
+      url('../Fonts/icomoon.ttf?7v8zod') format('truetype'),
+      url('../Fonts/icomoon.woff?7v8zod') format('woff'),
+      url('../Fonts/icomoon.svg?7v8zod#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
